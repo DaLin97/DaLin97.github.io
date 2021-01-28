@@ -14,10 +14,10 @@
   <meta property="og:title" content="hexo教程记录">
   
   
-  <meta property="og:url" content="https://dalin97.github.io/2021/01/28/index/index.html">
+  <meta property="og:url" content="https://dalin97.github.io/2021/01/28/hexo/index.html">
   
   
-  <meta property="og:img" content="/img/logo.png">
+  <meta property="og:img" content="/img/author.png">
   
   
   
@@ -26,6 +26,8 @@
   <meta property="og:article:modified_time" content="2021-01-28">
   <meta property="og:article:author" content="Dalin">
   
+  
+  <meta property="og:article:tag" content="hexo">
   
   
   
@@ -198,79 +200,104 @@
       <span>2021-01-28</span>
     </time>
     
+    <span class="dot"></span>
+    
+    <a href="/categories/hexo/" class="post-meta-link">hexo</a>
+    
+    
     
     <span class="dot"></span>
-    <span>361 字</span>
+    <span>360 字</span>
     
+  </div>
+  
+  <div class="post-meta post-show-meta" style="margin-top: -10px;">
+    <div style="display: flex; align-items: center;">
+      <i class="iconfont icon-biaoqian" style="margin-right: 2px; font-size: 1.15rem;"></i>
+      
+      
+        <a href="/tags/hexo/" class="post-meta-link">hexo</a>
+      
+    </div>
   </div>
   
   </header>
   <div id="section" class="post-content">
-    <div class="post-note note-style"><p>Hexo</p></div>
-
-<h1 id="文档"><a href="#文档" class="headerlink" title="文档"></a>文档</h1><p>欢迎使用 Hexo，本文档将帮助您快速上手。如果您在使用过程中遇到问题，请查看 <a target="_blank" rel="noopener" href="https://hexo.bootcss.com/docs/troubleshooting.html">问题解答</a> 中的解答，或者在 <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>、<a target="_blank" rel="noopener" href="https://groups.google.com/group/hexo">Google Group</a> 上提问。</p>
-<h2 id="什么是-Hexo？"><a href="#什么是-Hexo？" class="headerlink" title="什么是 Hexo？"></a>什么是 Hexo？</h2><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 <a target="_blank" rel="noopener" href="http://daringfireball.net/projects/markdown/">Markdown</a>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>安装 Hexo 相当简单，只需要先安装下列应用程序即可：</p>
+    <h1 id="文档"><a class="markdownIt-Anchor" href="#文档"></a> 文档</h1>
+<p>欢迎使用 Hexo，本文档将帮助您快速上手。如果您在使用过程中遇到问题，请查看 <a target="_blank" rel="noopener" href="https://hexo.bootcss.com/docs/troubleshooting.html">问题解答</a> 中的解答，或者在 <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>、<a target="_blank" rel="noopener" href="https://groups.google.com/group/hexo">Google Group</a> 上提问。</p>
+<h2 id="什么是-hexo"><a class="markdownIt-Anchor" href="#什么是-hexo"></a> 什么是 Hexo？</h2>
+<p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 <a target="_blank" rel="noopener" href="http://daringfireball.net/projects/markdown/">Markdown</a>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+<h2 id="安装"><a class="markdownIt-Anchor" href="#安装"></a> 安装</h2>
+<p>安装 Hexo 相当简单，只需要先安装下列应用程序即可：</p>
 <ul>
 <li><a target="_blank" rel="noopener" href="http://nodejs.org/">Node.js</a> (Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本)</li>
 <li><a target="_blank" rel="noopener" href="http://git-scm.com/">Git</a></li>
 </ul>
-<h3 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h3><p>所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。</p>
+<h3 id="安装-hexo"><a class="markdownIt-Anchor" href="#安装-hexo"></a> 安装 Hexo</h3>
+<p>所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。</p>
 <pre class="highlight"><span class="line">$ npm install -g hexo-cli</span><br></pre>
-<h3 id="进阶安装和使用"><a href="#进阶安装和使用" class="headerlink" title="进阶安装和使用"></a>进阶安装和使用</h3><p>对于熟悉 npm 的进阶用户，可以仅局部安装 <code>hexo</code> 包。</p>
+<h3 id="进阶安装和使用"><a class="markdownIt-Anchor" href="#进阶安装和使用"></a> 进阶安装和使用</h3>
+<p>对于熟悉 npm 的进阶用户，可以仅局部安装 <code>hexo</code> 包。</p>
 <pre class="highlight"><span class="line">$ npm install hexo</span><br></pre>
 <p>安装以后，可以使用以下两种方式执行 Hexo：</p>
 <ol>
-<li><p><code>npx hexo &lt;command&gt;</code></p>
+<li>
+<p><code>npx hexo &lt;command&gt;</code></p>
 </li>
-<li><p>将 Hexo 所在的目录下的 <code>node_modules</code> 添加到环境变量之中即可直接使用 <code>hexo &lt;command&gt;</code>：</p>
-<pre class="highlight"><span class="line">echo &#x27;PATH=&quot;$PATH:./node_modules/.bin&quot;&#x27; &gt;&gt; ~/.profile</span><br></pre></li>
-<li><h3 id="Node-js-版本限制"><a href="#Node-js-版本限制" class="headerlink" title="Node.js 版本限制"></a>Node.js 版本限制</h3></li>
+<li>
+<p>将 Hexo 所在的目录下的 <code>node_modules</code> 添加到环境变量之中即可直接使用 <code>hexo &lt;command&gt;</code>：</p>
+<pre class="highlight"><span class="line">echo &#x27;PATH=&quot;$PATH:./node_modules/.bin&quot;&#x27; &gt;&gt; ~/.profile</span><br></pre>
+</li>
+<li>
+<h3 id="nodejs-版本限制"><a class="markdownIt-Anchor" href="#nodejs-版本限制"></a> Node.js 版本限制</h3>
+</li>
 </ol>
 <p>我们强烈建议永远安装最新版本的 Hexo，以及 <a target="_blank" rel="noopener" href="https://hexo.bootcss.com/docs/index.html#%E5%AE%89%E8%A3%85%E5%89%8D%E6%8F%90">推荐的 Node.js 版本</a>。</p>
 <table>
 <thead>
 <tr>
-<th align="left">Hexo 版本</th>
-<th align="left">最低兼容 Node.js 版本</th>
+<th style="text-align:left">Hexo 版本</th>
+<th style="text-align:left">最低兼容 Node.js 版本</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="left">5.0+</td>
-<td align="left">10.13.0</td>
+<tbody>
+<tr>
+<td style="text-align:left">5.0+</td>
+<td style="text-align:left">10.13.0</td>
 </tr>
 <tr>
-<td align="left">4.1 - 4.2</td>
-<td align="left">8.10</td>
+<td style="text-align:left">4.1 - 4.2</td>
+<td style="text-align:left">8.10</td>
 </tr>
 <tr>
-<td align="left">4.0</td>
-<td align="left">8.6</td>
+<td style="text-align:left">4.0</td>
+<td style="text-align:left">8.6</td>
 </tr>
 <tr>
-<td align="left">3.3 - 3.9</td>
-<td align="left">6.9</td>
+<td style="text-align:left">3.3 - 3.9</td>
+<td style="text-align:left">6.9</td>
 </tr>
 <tr>
-<td align="left">3.2 - 3.3</td>
-<td align="left">0.12</td>
+<td style="text-align:left">3.2 - 3.3</td>
+<td style="text-align:left">0.12</td>
 </tr>
 <tr>
-<td align="left">3.0 - 3.1</td>
-<td align="left">0.10 or iojs</td>
+<td style="text-align:left">3.0 - 3.1</td>
+<td style="text-align:left">0.10 or iojs</td>
 </tr>
 <tr>
-<td align="left">0.0.1 - 2.8</td>
-<td align="left">0.10</td>
+<td style="text-align:left">0.0.1 - 2.8</td>
+<td style="text-align:left">0.10</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 
   </div>
   <div>
   
   <div class="post-note note-warning copyright" style="margin-top: 42px">
     <p><span style="font-weight: bold;">作者：</span><a target="_blank" rel="nofollow noopener noreferrer" href="https://dalin97.github.io/about">Dalin</a></p>
-    <p><span style="font-weight: bold;">文章链接：</span><a target="_blank" rel="nofollow noopener noreferrer" href="https://dalin97.github.io/2021/01/28/index/">https://dalin97.github.io/2021/01/28/index/</a></p>
+    <p><span style="font-weight: bold;">文章链接：</span><a target="_blank" rel="nofollow noopener noreferrer" href="https://dalin97.github.io/2021/01/28/hexo/">https://dalin97.github.io/2021/01/28/hexo/</a></p>
     <p><span style="font-weight: bold;">版权声明：</span>本博客所有文章除特别声明外，均采用<a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0 协议</a>。转载请注明出处！</p>
   </div>
   
@@ -279,7 +306,7 @@
 <div class="nav">
   
   <div class="nav-item-prev">
-    <a href="/2021/01/28/other/index/" class="nav-link">
+    <a href="/2021/01/28/other/wallpaper_complete/" class="nav-link">
       <i class="iconfont icon-left nav-prev-icon"></i>
       <div>
         <div class="nav-label">上一篇</div>
@@ -292,11 +319,11 @@
   
   
   <div class="nav-item-next">
-    <a href="/2021/01/27/hello-world/" class="nav-link">
+    <a href="/2020/08/03/document/" class="nav-link">
       <div>
         <div class="nav-label">下一篇</div>
         
-        <div class="nav-title">Hello World </div>
+        <div class="nav-title">主题使用文档 </div>
         
       </div>
       <i class="iconfont icon-right nav-next-icon"></i>
@@ -307,27 +334,27 @@
 
 <div class="card card-content toc-card" id="mobiletoc">
   <div class="toc-header"><i class="iconfont icon-menu" style="padding-right: 2px;"></i>目录</div>
-<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%87%E6%A1%A3"><span class="toc-text">文档</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF-Hexo%EF%BC%9F"><span class="toc-text">什么是 Hexo？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-text">安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85-Hexo"><span class="toc-text">安装 Hexo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9B%E9%98%B6%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8"><span class="toc-text">进阶安装和使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Node-js-%E7%89%88%E6%9C%AC%E9%99%90%E5%88%B6"><span class="toc-text">Node.js 版本限制</span></a></li></ol></li></ol></li></ol>
+<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%87%E6%A1%A3"><span class="toc-text"> 文档</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF-hexo"><span class="toc-text"> 什么是 Hexo？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-text"> 安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85-hexo"><span class="toc-text"> 安装 Hexo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9B%E9%98%B6%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8"><span class="toc-text"> 进阶安装和使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#nodejs-%E7%89%88%E6%9C%AC%E9%99%90%E5%88%B6"><span class="toc-text"> Node.js 版本限制</span></a></li></ol></li></ol></li></ol>
 </div></main>
           <aside class="left-column">
             
             <div class="card card-author">
               
-<img src="/img/logo.png" class="author-img">
+<img src="/img/author.png" class="author-img">
 
 <p class="author-name">Dalin</p>
 <p class="author-description">记录生活、记录自己，MyBlog</p>
 <div class="author-message">
   <a class="author-posts-count" href="/archives">
-    <span>3</span>
+    <span>5</span>
     <span>文章</span>
   </a>
   <a class="author-categories-count" href="/categories">
-    <span>0</span>
+    <span>2</span>
     <span>分类</span>
   </a>
   <a class="author-tags-count" href="/tags">
-    <span>0</span>
+    <span>5</span>
     <span>标签</span>
   </a>
 </div>
@@ -340,7 +367,7 @@
   <article class="display-when-two-columns spacer">
     <div class="card card-content toc-card">
       <div class="toc-header"><i class="iconfont icon-menu" style="padding-right: 2px;"></i>目录</div>
-<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%87%E6%A1%A3"><span class="toc-text">文档</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF-Hexo%EF%BC%9F"><span class="toc-text">什么是 Hexo？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-text">安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85-Hexo"><span class="toc-text">安装 Hexo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9B%E9%98%B6%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8"><span class="toc-text">进阶安装和使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Node-js-%E7%89%88%E6%9C%AC%E9%99%90%E5%88%B6"><span class="toc-text">Node.js 版本限制</span></a></li></ol></li></ol></li></ol>
+<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%87%E6%A1%A3"><span class="toc-text"> 文档</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF-hexo"><span class="toc-text"> 什么是 Hexo？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-text"> 安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85-hexo"><span class="toc-text"> 安装 Hexo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9B%E9%98%B6%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8"><span class="toc-text"> 进阶安装和使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#nodejs-%E7%89%88%E6%9C%AC%E9%99%90%E5%88%B6"><span class="toc-text"> Node.js 版本限制</span></a></li></ol></li></ol></li></ol>
     </div>
   </article>
   
@@ -350,6 +377,20 @@
   <div class="categories-header"><i class="iconfont icon-fenlei" style="padding-right: 2px;"></i>分类</div>
   <div class="categories-list">
     
+      <a href="/categories/文档">
+        <div class="categories-list-item">
+          文档
+          <span class="categories-list-item-badge">3</span>
+        </div>
+      </a>
+    
+      <a href="/categories/hexo">
+        <div class="categories-list-item">
+          hexo
+          <span class="categories-list-item-badge">1</span>
+        </div>
+      </a>
+    
   </div>
 </div>
   </article>
@@ -358,6 +399,16 @@
     <div class="tags-card">
   <div class="tags-header"><i class="iconfont icon-biaoqian" style="padding-right: 2px;"></i>热门标签</div>
   <div class="tags-list">
+    
+    <a href="\tags\数学公式" title="数学公式"><div class="tags-list-item">数学公式</div></a>
+    
+    <a href="\tags\katex" title="katex"><div class="tags-list-item">katex</div></a>
+    
+    <a href="\tags\mathjax" title="mathjax"><div class="tags-list-item">mathjax</div></a>
+    
+    <a href="\tags\代码高亮" title="代码高亮"><div class="tags-list-item">代码高亮</div></a>
+    
+    <a href="\tags\hexo" title="hexo"><div class="tags-list-item">hexo</div></a>
     
   </div>
 </div>
@@ -372,7 +423,7 @@
   
   <article class="card card-content toc-card">
     <div class="toc-header"><i class="iconfont icon-menu" style="padding-right: 2px;"></i>目录</div>
-<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%87%E6%A1%A3"><span class="toc-text">文档</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF-Hexo%EF%BC%9F"><span class="toc-text">什么是 Hexo？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-text">安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85-Hexo"><span class="toc-text">安装 Hexo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9B%E9%98%B6%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8"><span class="toc-text">进阶安装和使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Node-js-%E7%89%88%E6%9C%AC%E9%99%90%E5%88%B6"><span class="toc-text">Node.js 版本限制</span></a></li></ol></li></ol></li></ol>
+<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%87%E6%A1%A3"><span class="toc-text"> 文档</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF-hexo"><span class="toc-text"> 什么是 Hexo？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-text"> 安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85-hexo"><span class="toc-text"> 安装 Hexo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9B%E9%98%B6%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8"><span class="toc-text"> 进阶安装和使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#nodejs-%E7%89%88%E6%9C%AC%E9%99%90%E5%88%B6"><span class="toc-text"> Node.js 版本限制</span></a></li></ol></li></ol></li></ol>
   </article>
   
   
@@ -383,17 +434,22 @@
     
       <div class="recent-posts-item">
         <div class="recent-posts-item-title">2021-01-28</div>
-        <a href="/2021/01/28/other/index/"><div class="recent-posts-item-content">免费壁纸网站大全</div></a>
+        <a href="/2021/01/28/other/wallpaper_complete/"><div class="recent-posts-item-content">免费壁纸网站大全</div></a>
       </div>
     
       <div class="recent-posts-item">
         <div class="recent-posts-item-title">2021-01-28</div>
-        <a href="/2021/01/28/index/"><div class="recent-posts-item-content">hexo教程记录</div></a>
+        <a href="/2021/01/28/hexo/"><div class="recent-posts-item-content">hexo教程记录</div></a>
       </div>
     
       <div class="recent-posts-item">
-        <div class="recent-posts-item-title">2021-01-27</div>
-        <a href="/2021/01/27/hello-world/"><div class="recent-posts-item-content">Hello World</div></a>
+        <div class="recent-posts-item-title">2020-08-03</div>
+        <a href="/2020/08/03/document/"><div class="recent-posts-item-content">主题使用文档</div></a>
+      </div>
+    
+      <div class="recent-posts-item">
+        <div class="recent-posts-item-title">2020-08-03</div>
+        <a href="/2020/08/03/highlight/"><div class="recent-posts-item-content">代码高亮</div></a>
       </div>
     
   </div>
