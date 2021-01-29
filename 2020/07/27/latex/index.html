@@ -107,6 +107,9 @@
   
   
   
+  <link rel="prefetch" href="//unpkg.com/valine/dist/Valine.min.js" as="script">
+  
+  
   
   
 <link rel="stylesheet" href="/css/main.css">
@@ -328,6 +331,40 @@ s-65,47,-65,47z M834 80H400000v40H845z'/></svg></span></span></span><span class=
   
 </div>
 
+<div class="card card-content comment-card" style="margin-top: 16px;">
+  <div class="comment-card-title">评论</div>
+  
+  <div id="vcomments"></div>
+  
+  <script>
+    loadScript("//unpkg.com/valine/dist/Valine.min.js");
+    var oldLoadVa = window.onload;
+    window.onload = function () {
+      oldLoadVa && oldLoadVa();
+      new Valine({
+        el: '#vcomments',
+        appId: 'fsDzNaJRhK7VnhxjObENY8yw-gzGzoHsz',
+        appKey: 'B4D1c6WV8N66MsQEjF7Ul21B',
+        placeholder: '老板，想说点什么吗~',
+        path: window.location.pathname,
+        avatar: 'mp',
+        meta: ["nick","mail","link"],
+        pageSize: '10',
+        lang: '',
+        visitor: 'false',
+        highlight: true,
+        recordIP: true,
+        
+        
+        
+        enableQQ: 'false',
+        requiredFields: [],
+      });
+    };
+  </script>
+
+</div>
+
 <div class="card card-content toc-card" id="mobiletoc">
   <div class="toc-header"><i class="iconfont icon-menu" style="padding-right: 2px;"></i>目录</div>
 <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-text"> 简介</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%AF%E7%94%A8%E5%85%AC%E5%BC%8F"><span class="toc-text"> 启用公式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%B4%E6%8D%A2%E6%B8%B2%E6%9F%93%E5%99%A8"><span class="toc-text"> 更换渲染器</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%BC%94%E7%A4%BA"><span class="toc-text"> 演示</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B4%E8%A1%8C%E5%85%AC%E5%BC%8F"><span class="toc-text"> 整行公式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A1%8C%E5%86%85%E5%85%AC%E5%BC%8F"><span class="toc-text"> 行内公式</span></a></li></ol></li></ol>
@@ -409,9 +446,9 @@ s-65,47,-65,47z M834 80H400000v40H845z'/></svg></span></span></span><span class=
     
     <a href="\tags\mathjax" title="mathjax"><div class="tags-list-item">mathjax</div></a>
     
-    <a href="\tags\代码高亮" title="代码高亮"><div class="tags-list-item">代码高亮</div></a>
-    
     <a href="\tags\hexo" title="hexo"><div class="tags-list-item">hexo</div></a>
+    
+    <a href="\tags\代码高亮" title="代码高亮"><div class="tags-list-item">代码高亮</div></a>
     
   </div>
 </div>
